@@ -1,0 +1,152 @@
+.auth-layout {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.contact-layout {
+  height: 90vh;
+}
+
+.auth-image-container {
+  flex: 1;
+  position: relative;
+}
+
+.auth-image-container img {
+  width: 80%;
+}
+
+.attribute {
+  position: absolute;
+  top: 85%;
+  font-size: 0.6rem;
+}
+
+.auth-form-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 0.8;
+}
+
+.auth-form-cont h1 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-login-form {
+  gap: 2rem;
+}
+
+.auth-signup-form {
+  gap: 1rem;
+}
+
+.contact-form {
+  gap: 2rem;
+}
+
+::placeholder {
+  color: #8597a3;
+  font-size: 0.975rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.eye-open,
+.eye-close {
+  position: absolute;
+  top: 35%;
+  right: 1%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.auth-text {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.auth-link {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.signup-btn {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1095px) {
+  .auth-image-container img {
+    width: 100%;
+  }
+  .auth-form-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+  }
+  input {
+    font-size: 17px;
+  }
+  .auth-text,
+  .auth-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .auth-form {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .auth-layout {
+    width: 60vw;
+  }
+  .auth-image-container,
+  .auth-image-container img {
+    display: none !important;
+  }
+  .auth-form-cont h1 {
+    text-align: center;
+  }
+  .auth-form {
+    margin: auto;
+  }
+  input {
+    font-size: 16px;
+  }
+  .auth-text,
+  .auth-link {
+    font-size: 14px;
+  }
+  .signup-btn {
+    margin: auto;
+    margin-top: 1rem;
+  }
+}

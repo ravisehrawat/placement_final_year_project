@@ -1,0 +1,128 @@
+.box-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 10px auto;
+  margin-bottom: 50px;
+  gap: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00021929;
+  padding: 1.5rem 4rem;
+}
+
+.candidate-details h1 {
+  display: flex;
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-main {
+  position: relative;
+}
+
+.profile-pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.candidate-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.candidate-top a {
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.candidate-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.candidate-sub-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.candidate-sub-heading {
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 0.2rem;
+}
+
+.candidate-semi-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.candidate-semi-heading h3 {
+  font-size: 1rem;
+}
+
+.candidate-semi-heading span {
+  font-size: 0.8rem;
+  color: rgb(178, 178, 178);
+}
+
+.candidate-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.candidate-hobbies {
+  text-transform: capitalize;
+}
+
+.candidate-skills span {
+  text-transform: uppercase;
+}
+
+.candidate-job-role {
+  font-size: 0.85rem;
+  color: rgba(2, 2, 2, 0.574);
+}
+
+.candidate-job-description,
+.candidate-hobbies {
+  font-size: 0.9rem;
+  line-break: 20px;
+}
+
+@media (max-width: 900px) {
+  .box-container {
+    width: 70vw;
+    padding: 1.4rem 3.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .box-container {
+    width: 80vw;
+    padding: 1.2rem 3.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .box-container {
+    padding: 1rem 3rem;
+  }
+  .candidate-sub-container p,
+  .candidate-hobbies {
+    font-size: 0.9rem;
+    line-height: 15px;
+  }
+}

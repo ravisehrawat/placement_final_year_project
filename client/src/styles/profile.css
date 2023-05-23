@@ -1,0 +1,79 @@
+.profile-container {
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 12px;
+  width: 50vw;
+  box-shadow: 0 0 10px #00021929;
+  padding: 0 4rem;
+}
+
+.profile-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+}
+
+.profile-form,
+.drive-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.same-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.profile-btn {
+  width: max-content;
+  margin: 2rem auto;
+}
+
+.profile-hobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-add-btn {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1150px) {
+  .profile-container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-heading {
+    margin-bottom: 2.5rem;
+  }
+  .profile-form,
+  .drive-form {
+    width: 80%;
+  }
+  .same-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    width: 60vw;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-container {
+    width: 70vw;
+    padding: 0 1rem;
+  }
+}

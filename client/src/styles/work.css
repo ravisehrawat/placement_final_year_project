@@ -1,0 +1,50 @@
+.profile-work {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 98%;
+  margin: auto;
+}
+
+.profile-work-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-work-top-left {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.profile-work-top-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-company-name,
+.profile-project-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profile-project-link {
+  color: rgb(0, 53, 175);
+}
+
+.profile-job-role {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-company-desc {
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.work-delete-btn {
+  font-size: 1.5rem;
+  color: rgb(255, 22, 22);
+}

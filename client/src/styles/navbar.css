@@ -1,0 +1,147 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding: 10px 10%;
+  height: 72px;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  background-color: var(--white);
+  z-index: 2;
+  box-shadow: 0 0 5px #00021929;
+  transition: all 0.2 linear;
+}
+
+.logo {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  order: 1;
+}
+
+.nav-link li {
+  display: inline-block;
+  padding: 0px 20px;
+  width: max-content;
+}
+
+.nav-link li a {
+  transition: all 0.3s ease 0s;
+  color: #9a9ea6;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.nav-link li a:hover {
+  color: var(--primary);
+}
+
+.active {
+  color: var(--primary) !important;
+}
+
+.nav-btn {
+  border-radius: 30px !important;
+  font-size: 14px;
+  width: max-content !important;
+}
+
+.menu-icons {
+  display: none;
+  z-index: 100;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.menu-open,
+.menu-close {
+  position: absolute;
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .nav-btn {
+    padding: 0px 30px !important;
+    height: 35px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  header {
+    gap: 1.5rem;
+  }
+  .nav-btn {
+    padding: 0px 25px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-link {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary);
+    flex-direction: column;
+    transform: translateX(100%);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 20;
+    gap: 3rem;
+    transition: all 0.3s linear;
+  }
+  .nav-link li a {
+    color: var(--white);
+  }
+  .nav-link li a:hover {
+    color: var(--white);
+  }
+  .active {
+    color: var(--white) !important;
+  }
+  .nav-active .nav-link {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  .menu-icons {
+    display: block;
+    position: absolute;
+    top: 33%;
+    right: 7%;
+  }
+  .menu-close {
+    color: var(--white);
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    justify-content: space-center;
+    gap: 1rem;
+  }
+  .nav-btn {
+    padding: 0px 15px !important;
+    height: 25px !important;
+  }
+}
