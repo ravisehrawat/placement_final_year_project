@@ -42,12 +42,14 @@ To set up the project locally, follow these steps:
 5. Open your browser and go to `http://localhost:3000` to view the application.
 
 
-Contributing
+## Contributing
+
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
 
-Contact
-For any inquiries, please reach out to Ravi Sehrawat.
+## Contact
+
+For any inquiries, please reach out to [Ravi Sehrawat](mailto:ravisehrawat625@gmail.com) or visit my [GitHub profile](https://github.com/ravisehrawat).
 
 
 
